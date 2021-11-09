@@ -1,0 +1,42 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação</title>
+    <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <section class="hero">
+    <div class="menu">
+        <div class="logo">
+            <h1><a href="#">Educação Pública</a></h1>
+        </div>
+        <div class="lista">
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'noticia' %}">Notícias</a></li>
+                <li><a href="{% url 'video' %}">Vídeos</a></li>
+                <li><a href="{% url 'depoimento'%}">Depoimentos</a></li>
+                <li><a href="{% url 'sobre'%}">Sobre</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="hero_conteudo">
+        <h1 class="top_hero"> Educação Pública brasileira</h1>
+        <p class="hero_frase">"O homem não é nada além daquilo que a educação faz dele". </p>
+    </div>
+</section>
+    <hr> 
+    {% block main %} {% endblock %}
+
+    {% include 'footer.html' %}
+
+    {% include 'vslibras.html' %}
+    
+</body>
+</html>

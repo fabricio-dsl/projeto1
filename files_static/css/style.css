@@ -1,0 +1,150 @@
+/* Página 01-home */
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+    background-image: linear-gradient(rgba(78, 91, 114, 0.8),rgba(0,0,0,0.8)),url(/static/img/capa.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.menu {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo h1 a{
+    font-size: 3rem;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+}
+.lista ul li a{
+    font-size: 1rem;
+    color: antiquewhite;
+    text-decoration: none;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.lista ul li a:hover{ 
+    border-radius: 2px;
+    background-color: rgb(255, 246, 246);
+    color: rgb(0, 0, 0);
+    transition: all 0.5s ease;
+}
+.lista ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 20px
+}
+
+.hero_conteudo{
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    color: cornsilk;
+    text-align: center;
+}
+.top_hero{
+    font-family: sans-serif;
+    font-size: 70px;
+}
+.hero_frase{
+    font-size: 2rem;
+}
+hr{
+    background-color: darkslategrey;
+}
+.conteudo_principal{
+    text-align: justify;
+    margin: 50px 200px;
+    font-size: 20px;
+    line-height: 1.5;  
+}
+
+.corpo p{
+
+    margin-top: 50px;
+}
+.roda_pe{
+    background-image: url(/static/img/bg02.jpg);
+    background-size:cover;
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text_rd{
+    color: floralwhite;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+/* Página 02-notícias */
+
+.hero_nt{
+    background-image: linear-gradient(rgba(15, 17, 21, 0.8),rgba(0,0,0,0.8)),url(/static/img/capa.jpg);
+
+    background-size: cover;
+    height: 25vh;
+    width: 100%;
+}
+.menu_nt {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.conteudo_principal_nt{
+    text-align: justify;
+    margin: 50px 200px;
+    font-size: 20px;
+    line-height: 1.5; 
+
+}
+.conteudo_principal_nt hr{
+    width: 50%;
+
+}
+.conteudo_principal_nt img{
+    width: 600px;
+}
+
+/* Página 03-vídeos */
+.conteudo_principal_vd{
+    text-align: justify;
+    margin: 50px 200px;
+    font-size: 20px;
+    line-height: 1.5;  
+}
+.conteudo_principal_nt iframe{
+    width: px;
+}
+/* Página 04-sobre */
+
+.conteudo_principal_sb{
+    text-align: justify;
+    margin: 50px 200px;
+    font-size: 20px;
+    line-height: 1.5;  
+}
+
+/* Página 05-depoimento */
+.conteudo_principal_dp{
+    text-align: justify;
+    margin: 50px 200px;
+    font-size: 20px;
+    line-height: 1.5;  
+}
+.corpo ul{
+    font-size: 16px;
+}
+
+.conteudo_principal_dp img{
+    width: 600px;
+}
