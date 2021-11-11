@@ -9,16 +9,16 @@
     <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
     <title>Educação</title>
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% include 'button1.html' %}
 </head>
 <body>
-    <section class="hero_nt">
-        {% include 'menu.html' %}
-    </section>
-    <hr> 
+    {% include 'hero_sec.html' %}
+    
     {% block main %} {% endblock %}
-
-    {% include 'footer.html' %}
+    
+    {% include 'javascriptBT.html' %}
     
     {% include 'vslibras.html' %}
     
+    {% include 'footer.html' %}
 </html>

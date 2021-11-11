@@ -9,34 +9,42 @@
     <title>Educação</title>
     <link rel="shortcut icon" href="/static/img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    {% include 'button1.html' %}
+    
 </head>
 <body>
     <section class="hero">
     <div class="menu">
+        <nav>
         <div class="logo">
             <h1><a href="#">Educação Pública</a></h1>
         </div>
-        <div class="lista">
-            <ul>
-                <li><a href="{% url 'home' %}">Home</a></li>
-                <li><a href="{% url 'noticia' %}">Notícias</a></li>
-                <li><a href="{% url 'video' %}">Vídeos</a></li>
-                <li><a href="{% url 'depoimento'%}">Depoimentos</a></li>
-                <li><a href="{% url 'sobre'%}">Sobre</a></li>
-            </ul>
-        </div>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'noticia'%}">Notícias</a></li>
+                    <li><a href="{% url 'video' %}">Vídeos</a></li>
+                    <li><a href="{% url 'depoimento'%}">Depoimentos</a></li>
+                    <li><a href="{% url 'sobre'%}">Sobre</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
     </div>
     <div class="hero_conteudo">
-        <h1 class="top_hero"> Educação Pública brasileira</h1>
-        <p class="hero_frase">"O homem não é nada além daquilo que a educação faz dele". </p>
+        <h1> Educação Pública brasileira</h1>
+        <p>"O homem não é nada além daquilo que a educação faz dele". </p>
     </div>
 </section>
     <hr> 
     {% block main %} {% endblock %}
 
-    {% include 'footer.html' %}
-
+    
+    {% include 'javascriptBT.html' %}
+    
     {% include 'vslibras.html' %}
     
+    {% include 'footer.html' %}
 </body>
 </html>
